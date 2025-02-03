@@ -8,12 +8,12 @@ const Subscription = () => {
 
 
     return (
-        <div>
+        <div className='mx-14 mt-24'>
             
             {/* header */}
             <div className='flex items-center justify-between'>
                 <h1 className='text-xl font-semibold'>Subscription</h1>
-                <button className='bg-primary text-white h-10 px-4 rounded-md'>Create Subscription</button>
+                <button className='bg-dashboard text-white h-10 px-4 rounded-md'>Create Subscription</button>
             </div>
         </div>
     )

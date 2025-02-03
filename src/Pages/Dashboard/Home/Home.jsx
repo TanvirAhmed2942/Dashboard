@@ -106,14 +106,16 @@ import LineCharts from "./LineCharts";
 import BarCharts from "./BarCharts";
 import { GoDotFill } from "react-icons/go"; 
 import Filter from './Filter';
-
-
+import { TbUsersGroup } from "react-icons/tb";
+// import { FaRegMoneyBill1 } from "react-icons/fa6";
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { ImBooks } from "react-icons/im";
 
 const stats = [
-  { label: "Total User", value: "$10" },
-  { label: "Total Subscriber", value: "$10" },
-  { label: "Total Revenue", value: "$10" },
-  { label: "Total Income", value: "$10" },
+  { label: "Total User", value: "1000" },
+  { label: "Total Subscriber", value: "1200" },
+  { label: "Total Revenue", value: "$106" },
+  { label: "Total Chapters", value: "106" },
 ];
 
 const CustomLegend = () => (
@@ -134,22 +136,36 @@ const Home = () => {
   return (
     <div>
       {/* Dashboard Header */}
-      <h1 className="text-2xl font-semibold">Dashboard Overview</h1>
+      {/* <h1 className="text-2xl font-semibold">Dashboard Overview</h1> */}
 
       {/* Stats Cards */}
       <div className="grid grid-cols-4 gap-6 h-[120px]">
-        {stats.map((stat, index) => (
-          <div key={index} className="bg-white rounded-lg py-0 px-6 flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#EFEFEF] flex items-center justify-center">
-                <FaUserGroup color="#007BA5" size={24} />
-              </div>
-              <h2 className="text-base">{stat.label}</h2>
-            </div>
-            <h3 className="text-center text-primary text-[32px] font-semibold">{stat.value}</h3>
-          </div>
-        ))}
+  {stats.map((stat, index) => (
+    <div key={index} className="bg-white rounded-lg py-4 px-6 flex flex-col justify-center items-center">
+      <div className="flex items-center justify-center gap-3 w-full ">
+        <div className="w-14 h-14 rounded-full bg-[#EFEFEF] flex items-center justify-center">
+          {stat.label === "Total User" ? (
+            <FaUserGroup opacity={0.5} color="#023f86" size={24} />
+          ) : stat.label === "Total Subscriber" ? (
+            <TbUsersGroup opacity={0.5} color="#023f86" size={24} />
+          ) : stat.label === "Total Revenue" ? (
+            <RiMoneyDollarCircleLine opacity={0.5} color="#023f86" size={24} />
+          ) : (
+            <ImBooks opacity={0.5} color="#023f86" size={24} />
+          )}
+        </div>
+
+        {/* Text section, aligned vertically */}
+        <div className="flex flex-col justify-start">
+          <h2 className="text-base">{stat.label}</h2>
+          <h3 className="text-slate-600 text-[32px] font-semibold">{stat.value}</h3>
+        </div>
       </div>
+    </div>
+  ))}
+</div>
+
+
 
       {/*Line Chart Section */}
       <div className="w-full p-4 bg-white rounded mt-4 relative ">

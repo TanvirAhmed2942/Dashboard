@@ -19,13 +19,18 @@
 
 /* ant design menu option */
 .ant-menu-item:hover {
-  background-color: #007BA5 !important;
-  color: #fff !important;
+  background-color: #ffffff !important;
+  color: #023f86 !important;
+}
+
+.ant-menu-item {
+  /* background-color: #ffffff !important; */
+  color: #ffffff !important;
 }
 
 .ant-menu-item-selected {
-  background-color: #007BA5 !important;
-  color: #fff !important;
+  background-color: #ffffff !important;
+  color: #023f86 !important;
 }
 
 .ant-menu .ant-menu-item .ant-menu-item-icon +span{
@@ -40,6 +45,12 @@
   transition: none !important;
 }
 
+.ant-input-outlined{
+  outline: none;
+
+}
+
+
 .ant-badge .ant-badge-count {
   background: #007BA5 !important;
   color: white !important;
@@ -47,4 +58,31 @@
 
 .jodit-workplace{
   height: 550px !important;
+} 
+
+.ant-menu .ant-menu-submenu-title .ant-menu-item-icon {  
+  color: #ffffff !important;
+} 
+
+.ant-menu .ant-menu-submenu-title {  
+  color: #ffffff !important;
+}
+
+
+.ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+  position: static;
+}
+
+
+.ant-collapse>.ant-collapse-item {
+  border-bottom: none;
+  /* height: 90px; */
+}
+.ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-header-text {
+  padding: 10px;
+}
+
+
+.ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-arrow  {
+  padding: 20px;
 }

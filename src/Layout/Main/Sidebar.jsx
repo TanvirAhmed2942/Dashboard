@@ -10,7 +10,10 @@ import { IoIosLogOut } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import { BiSolidCategory } from 'react-icons/bi';
 import { PiCopyBold } from "react-icons/pi";
-
+import { RxDashboard } from "react-icons/rx";
+import { TbBulbFilled } from "react-icons/tb";
+import { HiTicket } from "react-icons/hi2";
+import { IoNewspaper } from "react-icons/io5";
 
 const Sidebar = () => {
     const location = useLocation();
@@ -28,8 +31,8 @@ const Sidebar = () => {
     const menuItems = [
         {
             key: "/",
-            icon: <AiOutlineDashboard size={24} />,
-            label: <Link to="/" >Dashboard</Link>
+            icon: <RxDashboard size={24} />,
+            label: <Link to="/" >Analytics</Link>
         },
         {
             key: "/contents",
@@ -42,40 +45,51 @@ const Sidebar = () => {
             label: <Link to="/earnings">Earnings</Link>
         },
         {
-            key: "/artists",
-            icon: <HiUsers size={24} />,
-            label: <Link to="/artists">Artists</Link>
+            key: "/insight",
+            icon: <TbBulbFilled size={24} />,
+            label: <Link to="/insight">Insightful Tips</Link>
         },
         {
-            key: "/users",
-            icon: <HiUserGroup size={24} />,
-            label: <Link to="/users">User</Link>
+            key: "/blogs",
+            icon: <IoNewspaper size={24} />,
+            label: <Link to="/blogs">Blogs</Link>
         },
-        /* {
-            key: "/subscription",
-            icon: <MdOutlineAdminPanelSettings size={24} />,
-            label: <Link to="/subscription">Subscription</Link>
-        }, */
+        {
+            key: "/medicalhistory",
+            icon: <IoNewspaper size={24} />,
+            label: <Link to="/medicalhistory">Medical History</Link>
+        },
+        // {
+        //     key: "/artists",
+        //     icon: <HiUsers size={24} />,
+        //     label: <Link to="/artists">Artists</Link>
+        // },
+        // {
+        //     key: "/users",
+        //     icon: <HiUserGroup size={24} />,
+        //     label: <Link to="/users">User</Link>
+        // },
+        
         /* {
             key: "/admin",
             icon: <MdOutlineAdminPanelSettings size={24} />,
             label: <Link to="/admin">Make Admin</Link>
         }, */
-        {
-            key: "/category",
-            icon: <MdOutlineCategory size={24} />,
-            label: <Link to="/category" >Category</Link>
-        },
-        {
-            key: "/sub-category",
-            icon: <BiSolidCategory size={24} />,
-            label: <Link to="/sub-category" >Sub Category</Link>
-        },
-        {
-            key: "/events",
-            icon: <MdOutlineCategory size={24} />,
-            label: <Link to="/events" >Events</Link>
-        },
+        // {
+        //     key: "/category",
+        //     icon: <MdOutlineCategory size={24} />,
+        //     label: <Link to="/category" >Category</Link>
+        // },
+        // {
+        //     key: "/sub-category",
+        //     icon: <BiSolidCategory size={24} />,
+        //     label: <Link to="/sub-category" >Sub Category</Link>
+        // },
+        // {
+        //     key: "/events",
+        //     icon: <MdOutlineCategory size={24} />,
+        //     label: <Link to="/events" >Events</Link>
+        // },
         {
             key: "subMenuSetting",
             icon: <IoSettingsOutline size={24} />,
@@ -103,11 +117,17 @@ const Sidebar = () => {
                 }
             ]
         },
+        // {
+        //     key: "/logout",
+        //     icon: <IoIosLogOut size={24} />,
+        //     label: <p onClick={handleLogout}>Logout</p>
+        // },
+        
         {
-            key: "/logout",
-            icon: <IoIosLogOut size={24} />,
-            label: <p onClick={handleLogout}>Logout</p>
-        },
+            key: "/subscription",
+            icon: <HiTicket size={24} />,
+            label: <Link to="/subscription">Subscription</Link>
+        }, 
     ];
 
     useEffect(() => {
@@ -136,17 +156,19 @@ const Sidebar = () => {
     };
 
     return (
-        <div className='mt-5'>
+        <div className='mt-5 '>
             <Link to={"/"} className=' flex items-center justify-center py-4'>
-            <p className="text-4xl font-semibold font-sans tracking-wider text-primary">TradCouples</p>
+            <p className="text-4xl font-semibold  font-sans tracking-wider text-white">CarePrime</p>
             </Link>
+          
             <Menu
                 mode="inline"
                 selectedKeys={[selectedKey]}
                 openKeys={openKeys}
                 onOpenChange={handleOpenChange}
-                style={{ borderRightColor: "transparent", background: "transparent" }}
+                style={{ borderRightColor: "transparent", background: "transparent", }}
                 items={menuItems}
+                className='space-y-5 '
             />
         </div>
     )

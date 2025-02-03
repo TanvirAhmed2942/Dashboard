@@ -25,6 +25,9 @@ import NotFound from "../NotFound";
 import Notifications from "../Pages/Dashboard/Notifications";
 import SubCategory from "../Pages/Dashboard/SubCategory";
 import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
+import Insight from "../Pages/Dashboard/Insight";
+import Blogs from "../Pages/Dashboard/Blogs";
+import MedicalHistory from "../Pages/Dashboard/MedicalHistory";
 
 const router = createBrowserRouter([
     {
@@ -44,7 +47,10 @@ const router = createBrowserRouter([
                 path: "/earnings",
                 element: <Earnings />
             },
-            
+            {
+                path: "/insight",
+                element: <Insight />
+            },
             {
                 path: "/artists",
                 element: <Artists />
@@ -101,6 +107,14 @@ const router = createBrowserRouter([
             {
                 path: "/notification",
                 element: <Notifications/> 
+            },
+            {
+                path: "/blogs",
+                element: <Blogs/> 
+            },
+            {
+                path: "/medicalhistory",
+                element: <MedicalHistory/> 
             }
                
         ]

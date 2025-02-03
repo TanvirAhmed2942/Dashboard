@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
 
-
 /* ant design modal footer top margin remove */
-.ant-modal-footer{
+.ant-modal-footer {
   margin-top: 0 !important;
 }
 
@@ -33,56 +31,64 @@
   color: #023f86 !important;
 }
 
-.ant-menu .ant-menu-item .ant-menu-item-icon +span{
+.ant-menu .ant-menu-item .ant-menu-item-icon + span {
   transition: none !important;
 }
 
-.ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title{
-  color: #007BA5 !important;
+.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: #007ba5 !important;
 }
 
-.ant-menu .ant-menu-title-content{
+.ant-menu .ant-menu-title-content {
   transition: none !important;
 }
 
-.ant-input-outlined{
+.ant-input-outlined {
   outline: none;
-
 }
-
 
 .ant-badge .ant-badge-count {
-  background: #007BA5 !important;
+  background: #007ba5 !important;
   color: white !important;
 }
 
-.jodit-workplace{
+.jodit-workplace {
   height: 550px !important;
-} 
+}
 
-.ant-menu .ant-menu-submenu-title .ant-menu-item-icon {  
-  color: #ffffff !important;
-} 
-
-.ant-menu .ant-menu-submenu-title {  
+.ant-menu .ant-menu-submenu-title .ant-menu-item-icon {
   color: #ffffff !important;
 }
 
+.ant-menu .ant-menu-submenu-title {
+  color: #ffffff !important;
+}
 
-.ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+.ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
   position: static;
 }
 
-
-.ant-collapse>.ant-collapse-item {
+.ant-collapse > .ant-collapse-item {
   border-bottom: none;
   /* height: 90px; */
 }
-.ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-header-text {
+.ant-collapse
+  > .ant-collapse-item
+  > .ant-collapse-header
+  .ant-collapse-header-text {
   padding: 10px;
 }
 
-
-.ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-arrow  {
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
   padding: 20px;
+}
+
+.ant-card .ant-card-head {
+  border-bottom: none;
+  min-height: 130px;
 }

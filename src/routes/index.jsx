@@ -26,129 +26,127 @@ import Notifications from "../Pages/Dashboard/Notifications";
 import SubCategory from "../Pages/Dashboard/SubCategory";
 import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
 import Insight from "../Pages/Dashboard/Insight";
-import Blogs from "../Pages/Dashboard/Blogs";
+import Blogs from "../Pages/Dashboard/Blogs/Blogs";
 import MedicalHistory from "../Pages/Dashboard/MedicalHistory";
 
 const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    // element: <ProtectedRoute><Main /></ProtectedRoute> ,
+    element: <Main />,
+    children: [
+      {
         path: "/",
-        // element: <ProtectedRoute><Main /></ProtectedRoute> , 
-        element: <Main />,
-        children: [
-            {
-                path: "/",
-                element: <Home />
-            },
-            {
-                path: "/contents",
-                element: <Contents />
-            },
-            {
-                path: "/earnings",
-                element: <Earnings />
-            },
-            {
-                path: "/insight",
-                element: <Insight />
-            },
-            {
-                path: "/artists",
-                element: <Artists />
-            },
-            {
-                path: "/users",
-                element: <Users />
-            },
-            {
-                path: "/subscription",
-                element: <Subscription />
-            },
-            {
-                path: "/admin",
-                element: <Admin />
-            },
-            {
-                path: "/category",
-                element: <Category />
-            },
-            {
-                path: "/events",
-                element: <Events />
-            },
-            {
-                path: "/banner",
-                element: <Banner />
-            },
-            {
-                path: "/about-us",
-                element: <AboutUs />
-            },
-            {
-                path: "/privacy-policy",
-                element: <PrivacyPolicy />
-            },
-            {
-                path: "/terms-and-conditions",
-                element: <TermsAndConditions />
-            },
-            {
-                path: "/change-password",
-                element: <ChangePassword />
-            },
-            {
-                path: "/sub-category",
-                element: <SubCategory />
-            },
-            {
-                path: "/profile",
-                element: <AdminProfile />
-            }
-            ,
-            {
-                path: "/notification",
-                element: <Notifications/> 
-            },
-            {
-                path: "/blogs",
-                element: <Blogs/> 
-            },
-            {
-                path: "/medicalhistory",
-                element: <MedicalHistory/> 
-            }
-               
-        ]
-    },
-    {
+        element: <Home />,
+      },
+      {
+        path: "/contents",
+        element: <Contents />,
+      },
+      {
+        path: "/earnings",
+        element: <Earnings />,
+      },
+      {
+        path: "/insight",
+        element: <Insight />,
+      },
+      {
+        path: "/artists",
+        element: <Artists />,
+      },
+      {
+        path: "/users",
+        element: <Users />,
+      },
+      {
+        path: "/subscription",
+        element: <Subscription />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
+      },
+      {
+        path: "/category",
+        element: <Category />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
+      },
+      {
+        path: "/banner",
+        element: <Banner />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
+      },
+      {
+        path: "/change-password",
+        element: <ChangePassword />,
+      },
+      {
+        path: "/sub-category",
+        element: <SubCategory />,
+      },
+      {
+        path: "/profile",
+        element: <AdminProfile />,
+      },
+      {
+        path: "/notification",
+        element: <Notifications />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "/medicalhistory",
+        element: <MedicalHistory />,
+      },
+    ],
+  },
+  {
+    path: "/auth",
+    element: <Auth />,
+    children: [
+      {
         path: "/auth",
-        element: <Auth />,
-        children: [
-            {
-                path: "/auth",
-                element: <Login />,
-            },
-            {
-                path: "login",
-                element: <Login />,
-            },
-            {
-                path: "forgot-password",
-                element: <ForgotPassword />,
-            },
-            {
-                path: "verify-otp",
-                element: <VerifyOtp />,
-            },
-            {
-                path: "reset-password",
-                element: <ResetPassword />,
-            }
-        ]
-    },
-    {
-        path: "*",
-        element: <NotFound />,
-    }
+        element: <Login />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "forgot-password",
+        element: <ForgotPassword />,
+      },
+      {
+        path: "verify-otp",
+        element: <VerifyOtp />,
+      },
+      {
+        path: "reset-password",
+        element: <ResetPassword />,
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
 ]);
 
 export default router;

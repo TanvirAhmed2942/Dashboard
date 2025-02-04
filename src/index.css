@@ -90,5 +90,16 @@
 
 .ant-card .ant-card-head {
   border-bottom: none;
-  min-height: 130px;
+  min-height: 120px;
+}
+
+.jodit-container:not(.jodit_inline) {
+  border-radius: 5px;
+}
+
+.jodit .jodit-workplace .jodit-wysiwyg,
+.jodit .jodit-workplace .jodit-wysiwyg_iframe,
+.jodit-container .jodit-workplace .jodit-wysiwyg,
+.jodit-container .jodit-workplace {
+  border-radius: 5px;
 }

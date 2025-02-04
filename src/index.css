@@ -64,15 +64,6 @@
   color: #ffffff !important;
 }
 
-.ant-table-wrapper
-  .ant-table-thead
-  > tr
-  > th:not(:last-child):not(.ant-table-selection-column):not(
-    .ant-table-row-expand-icon-cell
-  ):not([colspan])::before {
-  position: static;
-}
-
 .ant-collapse > .ant-collapse-item {
   border-bottom: none;
   /* height: 90px; */
@@ -91,6 +82,13 @@
 .ant-card .ant-card-head {
   border-bottom: none;
   min-height: 120px;
+}
+
+.ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload.ant-upload-select {
+  width: 100%;
+  height: 130px;
+  background-color: #ffffff;
 }
 
 .jodit-container:not(.jodit_inline) {

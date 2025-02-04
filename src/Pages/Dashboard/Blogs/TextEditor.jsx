@@ -10,7 +10,7 @@ const TextEditor = ({ value, onChange }) => {
     placeholder: "Start typing...",
     minHeight: 1,
     toolbarAdaptive: false,
-    toolbar: false,
+    toolbar: true,
     statusbar: false,
     maxHeight: 200,
   };

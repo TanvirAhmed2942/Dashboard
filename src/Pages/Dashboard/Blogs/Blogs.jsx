@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LuPlus } from "react-icons/lu";
 import BlogModal from "./BlogModal";
+import BlogTable from "./BlogTable";
 
 const AddTips = ({ onOpen }) => {
   return (
@@ -23,11 +24,11 @@ export default function Blogs() {
         <h2 className="text-[20px] font-medium">All Blogs</h2>
         <AddTips onOpen={() => setIsModalOpen(true)} />
       </div>
-
       <BlogModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       ></BlogModal>
+      <BlogTable />
     </div>
   );
 }

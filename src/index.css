@@ -84,6 +84,10 @@
   min-height: 120px;
 }
 
+.ant-table-wrapper .ant-table-tbody > tr > td {
+  color: "#929394";
+}
+
 .ant-upload-wrapper.ant-upload-picture-card-wrapper
   .ant-upload.ant-upload-select {
   width: 100%;

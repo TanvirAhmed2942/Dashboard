@@ -27,7 +27,8 @@ import SubCategory from "../Pages/Dashboard/SubCategory";
 import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
 import Insight from "../Pages/Dashboard/Insight";
 import Blogs from "../Pages/Dashboard/Blogs/Blogs";
-import MedicalHistory from "../Pages/Dashboard/MedicalHistory";
+import MedicalHistory from "../Pages/Dashboard/MedicalHistory/MedicalHistory";
+import Faq from "../Pages/Dashboard/FAQ/Faq";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
         element: <Category />,
       },
       {
+        path: "/faq",
+        element: <Faq />,
+      },
+      {
         path: "/events",
         element: <Events />,
       },
@@ -79,10 +84,10 @@ const router = createBrowserRouter([
         path: "/banner",
         element: <Banner />,
       },
-      {
-        path: "/about-us",
-        element: <AboutUs />,
-      },
+      // {
+      //   path: "/about-us",
+      //   element: <AboutUs />,
+      // },
       {
         path: "/privacy-policy",
         element: <PrivacyPolicy />,

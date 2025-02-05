@@ -4,6 +4,7 @@ import { RiEdit2Fill } from "react-icons/ri";
 import { LuPlus } from "react-icons/lu";
 import { Table } from "antd";
 import doctor from "../../assets/doctor.png";
+import { color } from "chart.js/helpers";
 
 const AddTips = () => {
   return (
@@ -16,7 +17,7 @@ const AddTips = () => {
 
 const Text = () => {
   return (
-    <p className="break-words ">
+    <p className="break-words text-[#929394]">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto amet quod
       non blanditiis beatae asperiores vel nihil debitis dolores ullam! Aliquam
       veritatis aliquid velit temporibus ullam optio consequatur nostrum aut?
@@ -51,6 +52,7 @@ const columns = [
     dataIndex: "date",
     key: "date",
     width: "170px",
+    color: "#929394",
   },
   {
     title: "Image",
@@ -65,6 +67,7 @@ const columns = [
     title: "Description",
     dataIndex: "description",
     key: "description",
+    color: "#929394",
   },
   {
     title: "Overview",
@@ -72,8 +75,8 @@ const columns = [
     key: "overview",
     render: (_, record, index) => (
       <div className="flex gap-5">
-        <RiEdit2Fill color="#5b52a3" size={24} />
-        <RiDeleteBin6Line color="red" size={24} />
+        <RiEdit2Fill color="#5b52a3" size={24} className="cursor-pointer" />
+        <RiDeleteBin6Line color="red" size={24} className="cursor-pointer" />
       </div>
     ),
     width: "150px",

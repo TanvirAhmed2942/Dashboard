@@ -138,14 +138,14 @@ const Sidebar = () => {
             </Link>
           ),
         },
-        {
-          key: "/change-password",
-          label: (
-            <Link to="/change-password" className="text-white hover:text-white">
-              Change Password
-            </Link>
-          ),
-        },
+        // {
+        //   key: "/change-password",
+        //   label: (
+        //     <Link to="/change-password" className="text-white hover:text-white">
+        //       Change Password
+        //     </Link>
+        //   ),
+        // },
       ],
     },
     // {

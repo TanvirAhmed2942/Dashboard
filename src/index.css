@@ -94,6 +94,16 @@
   height: 130px;
   background-color: #ffffff;
 }
+/* .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+  padding: 0 0 0 0;
+  background-color: #023f86;
+  width: 120px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 .jodit-container:not(.jodit_inline) {
   border-radius: 5px;

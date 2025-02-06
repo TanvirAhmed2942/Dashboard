@@ -12,7 +12,7 @@ const TextEditor = ({ value, onChange }) => {
     toolbarAdaptive: true,
     toolbar: true,
     statusbar: false,
-    maxHeight: 330,
+    maxHeight: 250,
   };
 
   return (

@@ -43,7 +43,25 @@ const SubscriptionCard = () => {
       >
         <div className="h-[200px] flex flex-col items-center justify-between">
           <List />
-          <Button className="rounded-[12px] px-14 py-5 mt-5">
+          <Button
+            className="rounded-[12px] px-14 py-5 mt-5"
+            style={{
+              backgroundColor: "#e5e7eb",
+              color: "",
+              border: "",
+              transition: "background-color 0.3s ease",
+            }}
+            onMouseEnter={(e) => (
+              (e.target.style.backgroundColor = "#023f86"),
+              (e.target.style.color = "#ffffff"),
+              (e.target.style.border = "#ffffff")
+            )}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = "#e5e7eb";
+              e.target.style.color = "#000000";
+              e.target.style.border = "1px solid transparent";
+            }}
+          >
             Edit Details
           </Button>
         </div>
@@ -57,7 +75,7 @@ const Subscription = () => {
       {/* header */}
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold flex items-center gap-1">
-          <IoArrowBackCircleOutline size={26} className="font-medium" />
+          <IoArrowBackCircleOutline size={26} className="cursor-pointer" />
           Subscription Plans
         </h1>
         {/* <button className="bg-dashboard text-white h-10 px-4 rounded-md">

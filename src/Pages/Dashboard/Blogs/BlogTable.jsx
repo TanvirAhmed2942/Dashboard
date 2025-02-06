@@ -48,6 +48,7 @@ const columns = [
     dataIndex: "date",
     key: "date",
     width: "170px",
+    render: (date) => <p className="text-[#929394]"> {date}</p>,
   },
   {
     title: "Image",
@@ -61,12 +62,14 @@ const columns = [
     dataIndex: "description",
     key: "description",
     width: "1000px",
+    render: (description) => <p className="text-[#929394]"> {description}</p>,
   },
   {
     title: "Source",
     dataIndex: "source",
     key: "source",
     width: "200px",
+    render: (source) => <p className="text-[#929394]"> {source}</p>,
   },
   {
     title: "Overview",

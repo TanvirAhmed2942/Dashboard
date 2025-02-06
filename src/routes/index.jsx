@@ -6,14 +6,12 @@ import Earnings from "../Pages/Dashboard/Earnings";
 import Artists from "../Pages/Dashboard/Artists";
 import Users from "../Pages/Dashboard/Users";
 import Admin from "../Pages/Dashboard/Admin";
-import Contents from "../Pages/Dashboard/Contents";
-
+import Contents from "../Pages/Dashboard/Contents/Contents";
 import Category from "../Pages/Dashboard/Category";
 import Events from "../Pages/Dashboard/Events";
 import Banner from "../Pages/Dashboard/Banner";
 import AboutUs from "../Pages/Dashboard/AboutUs";
-import PrivacyPolicy from "../Pages/Dashboard/PrivacyPolicy";
-import TermsAndConditions from "../Pages/Dashboard/TermsAndCondition";
+import PrivacyPolicy from "../Pages/Dashboard/PrivacyPolicy/PrivacyPolicy.jsx";
 import ChangePassword from "../Pages/Auth/ChangePassword";
 import Login from "../Pages/Auth/Login";
 import Subscription from "../Pages/Dashboard/Subscription";
@@ -29,6 +27,7 @@ import Insight from "../Pages/Dashboard/Insight";
 import Blogs from "../Pages/Dashboard/Blogs/Blogs";
 import MedicalHistory from "../Pages/Dashboard/MedicalHistory/MedicalHistory";
 import Faq from "../Pages/Dashboard/FAQ/Faq";
+import TermsAndCondition from "../Pages/Dashboard/TermsAndCondition/TermsAndCondition";
 
 const router = createBrowserRouter([
   {
@@ -94,12 +93,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/terms-and-conditions",
-        element: <TermsAndConditions />,
+        element: <TermsAndCondition />,
       },
-      {
-        path: "/change-password",
-        element: <ChangePassword />,
-      },
+      // {
+      //   path: "/change-password",
+      //   element: <ChangePassword />,
+      // },
       {
         path: "/sub-category",
         element: <SubCategory />,

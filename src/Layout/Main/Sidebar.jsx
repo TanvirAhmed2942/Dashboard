@@ -39,11 +39,11 @@ const Sidebar = () => {
       icon: <PiCopyBold size={24} />,
       label: <Link to="/contents">Contnets</Link>,
     },
-    {
-      key: "/earnings",
-      icon: <TbDatabaseDollar size={24} />,
-      label: <Link to="/earnings">Earnings</Link>,
-    },
+    // {
+    //   key: "/earnings",
+    //   icon: <TbDatabaseDollar size={24} />,
+    //   label: <Link to="/earnings">Earnings</Link>,
+    // },
     {
       key: "/insight",
       icon: <TbBulbFilled size={24} />,

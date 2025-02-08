@@ -9,7 +9,22 @@
   padding: 0;
   margin: 0;
 }
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "poppins";
+  font-weight: 400;
+  color: #737791;
+}
 
+/* Avatar */
+.ant-space-gap-col-small {
+  column-gap: 12px;
+}
+.ant-space-gap-col-small:hover {
+  font-weight: 600;
+  color: Black !important;
+}
 /* ant design modal footer top margin remove */
 .ant-modal-footer {
   margin-top: 0 !important;
@@ -94,16 +109,6 @@
   height: 130px;
   background-color: #ffffff;
 }
-/* .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
-  padding: 0 0 0 0;
-  background-color: #023f86;
-  width: 120px;
-  color: #ffffff;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .jodit-container:not(.jodit_inline) {
   border-radius: 5px;
